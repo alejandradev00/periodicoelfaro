@@ -234,6 +234,100 @@ Nuevas tecnologías están mejorando la eficiencia y reduciendo el impacto ambie
 
 </section>
     </main>
+<style>
+  @keyframes floatCloud1 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(18px)} }
+  @keyframes floatCloud2 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(-14px)} }
+  @keyframes floatCloud3 { 0%,100%{transform:translateX(0)} 50%{transform:translateX(10px)} }
+  .cloud1 { animation: floatCloud1 5s ease-in-out infinite; }
+  .cloud2 { animation: floatCloud2 6.5s ease-in-out infinite; }
+  .cloud3 { animation: floatCloud3 4.5s ease-in-out infinite; }
+  .footer-kawaii {
+    background-color: #fce4ec;
+    border-top: 3px solid #f48fb1;
+    padding: 30px 20px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .clouds-row { display: flex; justify-content: space-around; align-items: center; margin-bottom: 18px; }
+  .cloud {
+    display: inline-block;
+    background: #fff0f5;
+    border-radius: 50px;
+    padding: 10px 22px;
+    position: relative;
+    border: 1.5px solid #f8bbd0;
+    font-size: 13px;
+    color: #ad1457;
+  }
+  .cloud::before {
+    content: '';
+    position: absolute;
+    top: -12px; left: 18px;
+    width: 22px; height: 22px;
+    background: #fff0f5;
+    border-radius: 50%;
+    border: 1.5px solid #f8bbd0;
+    border-bottom-color: transparent;
+  }
+  .cloud::after {
+    content: '';
+    position: absolute;
+    top: -18px; left: 36px;
+    width: 16px; height: 16px;
+    background: #fff0f5;
+    border-radius: 50%;
+    border: 1.5px solid #f8bbd0;
+    border-bottom-color: transparent;
+  }
+  .footer-name { font-size: 22px; font-weight: bold; color: #880e4f; margin: 0 0 4px; }
+  .footer-role { font-size: 14px; color: #c2185b; margin: 0 0 16px; letter-spacing: 1px; }
+  .footer-divider { width: 60px; height: 3px; background: #f48fb1; border-radius: 10px; margin: 0 auto 16px; }
+  .footer-info { font-size: 13px; color: #880e4f; line-height: 2; margin-bottom: 16px; }
+  .footer-info a { color: #c2185b; text-decoration: none; font-weight: bold; }
+  .footer-info a:hover { text-decoration: underline; }
+  .socials { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .social-pill {
+    background: #f8bbd0;
+    color: #880e4f;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1.5px solid #f48fb1;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .social-pill:hover { background: #f48fb1; color: white; }
+  .footer-copy { font-size: 11px; color: #e91e8c; margin-top: 8px; }
+</style>
 
+<footer class="footer-kawaii">
+  <div class="clouds-row">
+    <div class="cloud cloud1">✨ kawaii</div>
+    <div class="cloud cloud2">☁️ otaku~</div>
+    <div class="cloud cloud3">💕 dev</div>
+  </div>
+
+  <p class="footer-name">🌸 Alejandra Prieto 🌸</p>
+  <p class="footer-role">Programadora · Desarrolladora Web</p>
+  <div class="footer-divider"></div>
+
+  <div class="footer-info">
+    <span>📧 <a href="mailto:dev.alejandraprieto@gmail.com">dev.alejandraprieto@gmail.com</a></span><br>
+    <span>📍 Santiago de Chile</span><br>
+    <span>📞 <a href="tel:+56961267454">+56 9 6126 7454</a></span>
+  </div>
+
+  <div class="socials">
+    <a class="social-pill" href="https://instagram.com/alejandrapurr" target="_blank">📸 @alejandrapurr</a>
+    <a class="social-pill" href="https://www.linkedin.com/in/alejandra-prieto-acevedo-6b7503342/" target="_blank">💼 LinkedIn</a>
+    <a class="social-pill" href="https://facebook.com/AlejandraLambdadelta" target="_blank">💙 Alejandra Lambdadelta</a>
+    <a class="social-pill" href="https://tiktok.com/@alejandrapurr" target="_blank">🎵 @alejandrapurr</a>
+  </div>
+
+  <p class="footer-copy">✨ hecho con amor y mucho café · El Faro © 2026 ✨</p>
+</footer>
 </body>
 </html>
