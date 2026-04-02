@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Sección Negocios - El Faro</title>
 
   <style>
 
 /* ALGO DE CSS Alejandra sin olvidaaaaaaar!!! */
+
+    img {
+  max-width: 100%;
+  height: auto;
+}
 
 article {
   border: 1px solid #ddd;
@@ -35,6 +41,11 @@ table {
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+  overflow-x: auto;
 }
 
 th, td {
@@ -53,8 +64,11 @@ header {
   padding: 20px;
 }
 
+@media (max-width: 600px) {
 nav ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   list-style: none;
   gap: 20px;
@@ -62,6 +76,7 @@ nav ul {
   padding: 12px;
   margin: 0;
 }
+  }
 
 nav a {
   text-decoration: none;
