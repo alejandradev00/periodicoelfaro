@@ -2,13 +2,182 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sección Deporte</title>
+  <title>Sección Deporte - El Faro</title>
+
+  <style>
+
+/* ALGO DE CSS Alejandra sin olvidaaaaaaar!!! */
+
+.titulo-noticia {
+  color: #6b7aa1 !important;
+  margin-top: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+table {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6f8;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  background-color: #c5c6e6;
+  padding: 12px;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6b7aa1;
+  font-weight: bold;
+  background-color: #f28b9c;
+  padding: 8px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+h1 {
+  color: #6b7aa1;
+}
+
+.noticia strong,
+.noticia em {
+  color: #6b7aa1;
+}
+
+  </style>
+
 </head>
+
 <body>
 
-<h1>⚽ Sección de Deporte</h1>
+<header>
+  <h1>📰 Periódico El Faro</h1>
+  <img src="aveiro-lighthouse_7484210.png" width="150">
+</header>
 
-<p>Bienvenida a la sección deportiva del periódico.</p>
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="deporte.html">Deporte</a></li>
+    <li><a href="#">Negocios</a></li>
+  </ul>
+</nav>
+
+<section style="width: 80%; margin: auto;">
+
+<h2 style="text-align:center;">⚽ Sección de Deporte</h2>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse;">
+  <tr style="background-color: #f28b9c; color: white;">
+    <th>Título</th>
+    <th>Fecha</th>
+    <th>Descripción</th>
+  </tr>
+
+  <tr>
+    <td><a href="#dep1">⚽ Japón destaca en fútbol internacional</a></td>
+    <td>2026</td>
+    <td>La selección japonesa sigue destacando en torneos globales.</td>
+  </tr>
+
+  <tr style="background-color: #fdf6f8;">
+    <td><a href="#dep2">🏃‍♂️ Maratón de Tokio reúne a miles</a></td>
+    <td>2026</td>
+    <td>El evento deportivo crece en participación internacional.</td>
+  </tr>
+
+  <tr>
+    <td><a href="#dep3">🏀 Baloncesto japonés en crecimiento</a></td>
+    <td>2026</td>
+    <td>El interés por el básquet aumenta entre jóvenes.</td>
+  </tr>
+</table>
+
+<br><br><br>
+
+<h2 id="dep1" class="titulo-noticia">1. ⚽ Japón destaca en fútbol internacional</h2>
+<p class="noticia">
+<strong>La selección japonesa ha demostrado un crecimiento sostenido en el fútbol internacional</strong>, 
+destacando en competencias recientes por su disciplina y estrategia.
+
+<br><br>
+
+El equipo ha logrado enfrentarse a selecciones de alto nivel, mostrando un juego rápido y organizado que ha llamado la atención del mundo.
+
+<br><br>
+
+<em>Este avance posiciona a Japón como una potencia emergente en el fútbol global.</em>
+
+<br><br>
+
+<a href="https://www.jfa.jp/eng/" target="_blank">Ver fuente</a>
+</p>
+
+<h2 id="dep2" class="titulo-noticia">2. 🏃‍♂️ Maratón de Tokio reúne a miles</h2>
+<p class="noticia">
+<strong>El maratón de Tokio se ha consolidado como uno de los eventos deportivos más importantes de Japón</strong>, 
+atrayendo a corredores de todo el mundo.
+
+<br><br>
+
+La competencia recorre lugares emblemáticos de la ciudad, combinando deporte, turismo y cultura.
+
+<br><br>
+
+<em>Cada año aumenta la participación internacional, fortaleciendo su prestigio global.</em>
+
+<br><br>
+
+<a href="https://www.marathon.tokyo/en/" target="_blank">Ver fuente</a>
+</p>
+
+<h2 id="dep3" class="titulo-noticia">3. 🏀 Baloncesto japonés en crecimiento</h2>
+<p class="noticia">
+<strong>El baloncesto en Japón ha experimentado un crecimiento significativo en los últimos años</strong>, 
+especialmente entre jóvenes.
+
+<br><br>
+
+Las ligas locales han impulsado el talento nacional, generando mayor interés en este deporte.
+
+<br><br>
+
+<em>El futuro del básquet japonés se proyecta prometedor a nivel internacional.</em>
+
+<br><br>
+
+<a href="https://www.bleague.jp/en/" target="_blank">Ver fuente</a>
+</p>
+
+</section>
 
 </body>
 </html>
